@@ -1,0 +1,16 @@
+.aboutSection{
+
+}
+
+.about-wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 
+.about-img{
+    background: pink;
+    height:300px;
+    width:300px;
+} */

@@ -1,0 +1,129 @@
+.banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 90vh;
+
+}
+
+.banner-content-inner {
+    max-width: 460px;
+}
+
+.banner-content-inner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-content-inner h1 span {
+    color: var(--pink);
+}
+
+.banner-content-inner p {
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.36;
+    margin-bottom: 10px;
+}
+
+.home-btn {
+    margin: 10px 0;
+}
+
+
+.social-icon {
+    margin: 2rem 0;
+    display: flex;
+    gap: 0rem;
+
+}
+
+.social-icon a {
+    font-size: 18px;
+    color: var(--pink);
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.social-icon a:hover {
+    font-size: 18px;
+    background: var(--pink);
+    padding: 8px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+/* Banner/ banner-images  */
+
+.banner-images {
+    width: 100%;
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.banner-images .banner-img {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 46% 54% 68% 32% / 37% 40% 60% 63%;
+    background: var(--pink2);
+    width: 403px;
+    height: 380px;
+    position: absolute;
+    z-index: -11;
+    animation: myanimation 10s infinite;
+}
+
+@keyframes myanimation {
+    0% {background-color: var(--pink);}
+    25%{background-color:#f9ca24;}
+    50%{background-color:#00d2d3;}
+    75%{background-color:#a29bfe;}
+    100% {background-color: #B33771;}
+  }
+.banner-images .banner-img img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+
+}
+
+.banner-blur1{
+    position: absolute;
+    content:"";
+    /* width: 20rem; */
+    width: 20rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -15;
+    top: -18%;
+    right:10%;
+    filter: blur(72px);
+}
+
+.banner-blur2{
+    position: absolute;
+    content:"";
+    /* width: 20rem; */
+    width: 20rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: #c1f5ff;
+    z-index: -15;
+    bottom: -18%;
+    right:10%;
+    filter: blur(72px);
+}
